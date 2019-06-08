@@ -14,7 +14,7 @@ var img;
   name can be added in the directory if required, otherwise a "NO IMAGE" icon
   will display.*/
 var companyArray = ['amp','arla','aus-ethical','aviva','ba','barclays','bp',
-'bupa','catholic-super','co-op','test', 'deloitte','equity-trustees', 'gm', 'gsk','ihg',
+'bupa','catholic-super','co-op', 'deloitte','equity-trustees', 'gm', 'gsk','ihg',
 'lbg','linde','mns','nestle','nike','plum','provident','qsuper','rest','sara-lee',
 'shell','sun','unilever','USS','vodafone'];
 
@@ -39,7 +39,6 @@ function imgError(image){
   image.onerror = "";
   image.src = "clientlogos/noImage.jpg";
 }
-
 
 //The Vue object for the implemented client list.
 var clients = new Vue({

@@ -3,7 +3,7 @@
 
 .clientListItem {
   width: 100px;
-  height: 120px;
+  height: 130px;
   background-color: white;
   float: left;
   margin: 15px;
@@ -21,16 +21,20 @@
 .imgWrap {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: auto; }
 
 .TextWrap {
   text-align: center;
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  left: 10px;
+  right: 10px; }
 
 .companyName {
   margin-left: auto;
   margin-right: auto;
+  font-weight: bold;
   color: #D40122; }
 
 .clientRow {

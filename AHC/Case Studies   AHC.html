@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="./Case Studies   AHC_files/css">
     <style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style>
     <style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}</style>
+    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" defer="" async="" src="./Case Studies   AHC_files/piwik.js"></script>
     <title>Client List | AHC</title>
     <meta charset="utf-8">
@@ -98,8 +99,23 @@
     </div>
     <a name="casestudy-section"></a>
     <div class="casestudy-section">
-      <div class="scanlines-clear">
-        <h2>...</h2>
+      <div class="scanlines-clear" id="clients">
+        <div class="container-fluid">
+        <div class="row clientRow">
+          <ul class="clientList">
+            <li v-for="(item, index) in imgList" class="clientListItem">
+              <a :href="webLinkList[index]">
+                <div class="imgWrap">
+                  <img class="clientLogo" :id="'client'+index" :src="item" onerror="imgError(this)" alt="ClientLogo">
+                </div>
+                <div class="TextWrap">
+                  <span class="companyName">TEXT</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       </div>
       <!-- .scanlines-clear -->
     </div>
@@ -364,6 +380,8 @@
     </div>
     <!-- .real-footer -->
     </div> <!-- .footer-section -->
+    <script src="js/vue.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
     <script type="text/javascript" src="./Case Studies   AHC_files/jquery.min.js"></script>
     <script type="text/javascript" src="./Case Studies   AHC_files/js"></script><script src="./Case Studies   AHC_files/main.js" type="text/javascript"></script>
     <script src="./Case Studies   AHC_files/jquery-ui.min.js"></script>

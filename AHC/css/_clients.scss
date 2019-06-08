@@ -1,0 +1,35 @@
+.clientList {
+  list-style: none;
+}
+.clientListItem{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  float: left;
+  margin: 15px;
+  transition: .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.clientListItem:hover{
+  transform: scale(1.1);
+  transition: .2s;
+}
+.imgWrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.TextWrap{
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+.clientRow{
+    margin: auto;
+}
+.clientLogo{
+  width: 100%;
+}

@@ -70,8 +70,7 @@
           <a href="http://www.ahc.com/casestudies#" class="dropdown-toggle" data-toggle="dropdown">What we do <span class="caret"></span></a>
           <ul class="what-we-do-menu dropdown-menu" role="menu">
             <li><a href="http://www.ahc.com/change_communications">Change Communications</a></li>
-            <li><a href="http://www.ahc.com/pension_communications">                Pension
-              Communications</a>
+            <li><a href="http://www.ahc.com/pension_communications">Pension Communications</a>
             </li>
             <li><a href="http://www.ahc.com/reward_communications">Reward Communications</a></li>
           </ul>
@@ -109,7 +108,7 @@
                   <img class="clientLogo" :id="'client'+index" :src="item" onerror="imgError(this)" alt="ClientLogo">
                 </div>
                 <div class="TextWrap">
-                  <span class="companyName">TEXT</span>
+                  <span class="companyName">{{ companies[index] }}</span>
                 </div>
               </a>
             </li>
